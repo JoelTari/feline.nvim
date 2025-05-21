@@ -92,6 +92,9 @@ Feline is a Lua statusline plugin that prioritizes speed, customizability and mi
 **[Config by Hitesh-Aggarwal](https://github.com/Hitesh-Aggarwal/feline_one_monokai.nvim/blob/2ff798d4d0435d2145593587dc93a70e72a6d279/plugin/feline_one_monokai.lua)**
 ![image](https://raw.githubusercontent.com/Hitesh-Aggarwal/feline_one_monokai.nvim/2ff798d4d0435d2145593587dc93a70e72a6d279/screenshot.png)
 
+**[Config by Dharmx](https://gist.github.com/dharmx/47139967b0c4303572e3742af725300c)**
+![image](https://user-images.githubusercontent.com/80379926/205459030-1ef38f4f-b364-43ea-876e-db98549c38cd.png)
+
 You can add your own configuration to this list. If you're interested, simply make a [Pull Request](CONTRIBUTING.md) and I'll add it.
 
 ## Installation
@@ -162,7 +165,7 @@ If you have an issue that you can't find the fix to in the documentation or want
 
 Now, you might be thinking, why do we need another statusline plugin? We've already got a bunch of brilliant statusline plugins like galaxyline, airline, lualine, expressline etc. and all of them are excellent. So then, why Feline?
 
-I'd like the preface this by saying that what I'm about to say can be (and probably is) very biased and opinionated. Take what's being said here with a grain of salt. All of this is purely my opinion and not a fact by any means, so it's fine to disagree. Moreover, any statement I make here may be incorrect or outdated. In which case, please feel free to make an [Issue or Pull Request](CONTRIBUTING.md) correcting it.
+I'd like to preface this by saying that what I'm about to say can be (and probably is) very biased and opinionated. Take what's being said here with a grain of salt. All of this is purely my opinion and not a fact by any means, so it's fine to disagree. Moreover, any statement I make here may be incorrect or outdated. In which case, please feel free to make an [Issue or Pull Request](CONTRIBUTING.md) correcting it.
 
 I think that despite those plugins being neat, each have their own shortcomings. I find those shortcomings as too much to ignore. For example, most of the statusline plugins are not very customizable and the plugins only provide a limited amount of tools and options for customization. Feline, on the other hand, is built for customizability from the ground up. You are not limited in any way by what the plugin provides. You can control every individual component and its location, appearance, everything about it.
 
@@ -185,6 +188,3 @@ Feline is licensed under GNU GPLv3. For more info, see: [LICENSE.md](LICENSE.md)
 ### Naming
 
 The name of this plugin is a silly pun based on the convention of the names of statusline plugins ending with 'line', while also being named after cats. And in a way this statusline is supposed to be as quick as a cat's instincts, so I guess the name fits.
-
-## Support
-<a href="https://www.buymeacoffee.com/famiuhaque" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

@@ -15,7 +15,7 @@ function M.position(_, opts)
     before_cursor = before_cursor:gsub('\t', string.rep(' ', vim.bo.tabstop))
 
     -- Turn col from byteindex to column number and make it start from 1
-    col = vim.str_utfindex(before_cursor) + 1
+    col = vim.str_utfindex(before_cursor, "utf-8") + 1
 
     local linenr_min_width, colnr_min_width
 
@@ -70,6 +70,29 @@ function M.scroll_bar(_, opts)
         return string.rep(scroll_bar_blocks[8 - math.floor(curr_line / lines * 7)], 2)
     else
         return string.rep(scroll_bar_blocks[math.floor(curr_line / lines * 7) + 1], 2)
+    end
+end
+
+function M.search_count()
+    if vim.v.hlsearch == 0 then
+        return ''
+    end
+
+    local result = vim.fn.searchcount { maxcount = 999, timeout = 250 }
+
+    if result.incomplete == 1 or next(result) == nil then
+        return ''
+    end
+
+    return string.format('[%d/%d]', result.current, math.min(result.total, result.maxcount))
+end
+
+function M.macro()
+    local recording_register = vim.fn.reg_recording()
+    if recording_register == '' then
+        return ''
+    else
+        return 'Recording @' .. recording_register
     end
 end
 
